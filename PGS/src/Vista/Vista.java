@@ -248,12 +248,14 @@ public class Vista extends javax.swing.JFrame {
         panel_inicioLayout.setHorizontalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_inicioLayout.createSequentialGroup()
+                .addContainerGap(235, Short.MAX_VALUE)
+                .addGroup(panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jl_PGS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jL_imagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(235, Short.MAX_VALUE))
+            .addGroup(panel_inicioLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jl_PGS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jL_imagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jL_bienvenido))
+                .addComponent(jL_bienvenido)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_inicioLayout.setVerticalGroup(
@@ -1845,7 +1847,7 @@ public class Vista extends javax.swing.JFrame {
                         panel_seguimientosLayout.setHorizontalGroup(
                             panel_seguimientosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel_seguimientosLayout.createSequentialGroup()
-                                .addGap(63, 63, 63)
+                                .addGap(38, 38, 38)
                                 .addGroup(panel_seguimientosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(label_cliente_seguimiento)
                                     .addGroup(panel_seguimientosLayout.createSequentialGroup()
@@ -1858,11 +1860,11 @@ public class Vista extends javax.swing.JFrame {
                                             .addComponent(combo_nombre_cliente_seguimiento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(dateChooserCombo2, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
                                             .addComponent(combo_filtro_cliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addContainerGap(478, Short.MAX_VALUE))
+                                .addContainerGap(505, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_seguimientosLayout.createSequentialGroup()
-                                .addContainerGap(13, Short.MAX_VALUE)
+                                .addContainerGap(14, Short.MAX_VALUE)
                                 .addComponent(panel_datos_seg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap(11, Short.MAX_VALUE))
                         );
                         panel_seguimientosLayout.setVerticalGroup(
                             panel_seguimientosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1883,7 +1885,7 @@ public class Vista extends javax.swing.JFrame {
                                     .addComponent(label_fecha_seguimiento))
                                 .addGap(35, 35, 35)
                                 .addComponent(panel_datos_seg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(81, Short.MAX_VALUE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         );
 
                         jTabbedPane1.addTab("Seguimientos", panel_seguimientos);
