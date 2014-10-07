@@ -11,8 +11,6 @@ import Controlador.Controlador;
 import Modelo.Cliente;
 import Modelo.Padecimiento;
 import java.awt.Font;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
 
 public class Vista extends javax.swing.JFrame {
@@ -24,7 +22,8 @@ public class Vista extends javax.swing.JFrame {
         setIconImage(icon);
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        this.setSize(screenSize);
+        //this.setSize(screenSize);
+        this.setLocationRelativeTo(null);
         this.setResizable(false);
 
         grupo_sexo.add(rb_masculino);
@@ -248,14 +247,12 @@ public class Vista extends javax.swing.JFrame {
         panel_inicioLayout.setHorizontalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_inicioLayout.createSequentialGroup()
-                .addContainerGap(235, Short.MAX_VALUE)
-                .addGroup(panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jl_PGS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jL_imagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(235, Short.MAX_VALUE))
-            .addGroup(panel_inicioLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jL_bienvenido)
+                .addGroup(panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jl_PGS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jL_imagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jL_bienvenido))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel_inicioLayout.setVerticalGroup(
@@ -315,7 +312,7 @@ public class Vista extends javax.swing.JFrame {
                 .addComponent(jbEditarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
                 .addComponent(jbDesactivarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(242, Short.MAX_VALUE))
         );
 
         panel_datos.setBorder(null);
@@ -442,12 +439,12 @@ public class Vista extends javax.swing.JFrame {
                                         .addComponent(jTFHernia)
                                         .addComponent(jTFQuebradura, javax.swing.GroupLayout.Alignment.TRAILING)
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
-                                            .addGap(0, 33, Short.MAX_VALUE)
+                                            .addGap(0, 0, Short.MAX_VALUE)
                                             .addComponent(jTFLesion, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGroup(jPanel12Layout.createSequentialGroup()
                                     .addComponent(jLabel27)
                                     .addGap(0, 0, Short.MAX_VALUE)))))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel12Layout.createSequentialGroup()
@@ -829,26 +826,27 @@ public class Vista extends javax.swing.JFrame {
                         desactivar_ClienteLayout.setHorizontalGroup(
                             desactivar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(desactivar_ClienteLayout.createSequentialGroup()
-                                .addGap(31, 31, 31)
-                                .addComponent(jLabel51)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(desactivar_ClienteLayout.createSequentialGroup()
-                                .addContainerGap(149, Short.MAX_VALUE)
                                 .addGroup(desactivar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton10)
-                                    .addComponent(cedCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addContainerGap(109, Short.MAX_VALUE))
+                                    .addGroup(desactivar_ClienteLayout.createSequentialGroup()
+                                        .addGap(31, 31, 31)
+                                        .addComponent(jLabel51)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(cedCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(desactivar_ClienteLayout.createSequentialGroup()
+                                        .addGap(78, 78, 78)
+                                        .addComponent(jButton10)))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         );
                         desactivar_ClienteLayout.setVerticalGroup(
                             desactivar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(desactivar_ClienteLayout.createSequentialGroup()
-                                .addContainerGap(19, Short.MAX_VALUE)
-                                .addComponent(jLabel51)
-                                .addGap(9, 9, 9)
-                                .addComponent(cedCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(33, 33, 33)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(desactivar_ClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel51)
+                                    .addComponent(cedCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(26, 26, 26)
                                 .addComponent(jButton10)
-                                .addContainerGap())
+                                .addGap(48, 48, 48))
                         );
 
                         javax.swing.GroupLayout panel_registro_clienteLayout = new javax.swing.GroupLayout(panel_registro_cliente);
@@ -858,12 +856,12 @@ public class Vista extends javax.swing.JFrame {
                             .addGroup(panel_registro_clienteLayout.createSequentialGroup()
                                 .addComponent(panel_menu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(panel_datos, javax.swing.GroupLayout.DEFAULT_SIZE, 584, Short.MAX_VALUE))
+                                .addComponent(panel_datos, javax.swing.GroupLayout.DEFAULT_SIZE, 710, Short.MAX_VALUE))
                             .addGroup(panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(panel_registro_clienteLayout.createSequentialGroup()
-                                    .addGap(206, 206, 206)
+                                    .addGap(602, 602, 602)
                                     .addComponent(desactivar_Cliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addContainerGap(189, Short.MAX_VALUE)))
+                                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         );
                         panel_registro_clienteLayout.setVerticalGroup(
                             panel_registro_clienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -873,7 +871,7 @@ public class Vista extends javax.swing.JFrame {
                                 .addGroup(panel_registro_clienteLayout.createSequentialGroup()
                                     .addGap(210, 210, 210)
                                     .addComponent(desactivar_Cliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addContainerGap(32, Short.MAX_VALUE)))
+                                    .addContainerGap(167, Short.MAX_VALUE)))
                         );
 
                         jTabbedPane1.addTab("Registro del Cliente", panel_registro_cliente);
@@ -1860,11 +1858,11 @@ public class Vista extends javax.swing.JFrame {
                                             .addComponent(combo_nombre_cliente_seguimiento, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(dateChooserCombo2, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
                                             .addComponent(combo_filtro_cliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addContainerGap(505, Short.MAX_VALUE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_seguimientosLayout.createSequentialGroup()
-                                .addContainerGap(14, Short.MAX_VALUE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(panel_datos_seg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(11, Short.MAX_VALUE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         );
                         panel_seguimientosLayout.setVerticalGroup(
                             panel_seguimientosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1922,13 +1920,13 @@ public class Vista extends javax.swing.JFrame {
                             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGap(0, 0, 0)
-                                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 781, Short.MAX_VALUE))
+                                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 781, Short.MAX_VALUE))
                         );
                         layout.setVerticalGroup(
                             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(0, 0, 0)
-                                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE))
+                                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 585, Short.MAX_VALUE))
                         );
 
                         pack();
@@ -1941,7 +1939,7 @@ public class Vista extends javax.swing.JFrame {
     }//GEN-LAST:event_jbRegistrarClienteActionPerformed
 
     private void jbEditarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbEditarClienteActionPerformed
-        //desactivar_Cliente.setVisible(false);
+        desactivar_Cliente.setVisible(false);
         panel_reg_fisico.setVisible(true);
         panel_reg_fisico.paintComponents(panel_reg_fisico.getGraphics());
         //cargar datos de registro del cliente
@@ -1971,6 +1969,7 @@ public class Vista extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jbDesactivarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDesactivarClienteActionPerformed
+        panel_reg_fisico.setVisible(false);
         desactivar_Cliente.setVisible(true);
         desactivar_Cliente.paintComponents(desactivar_Cliente.getGraphics());
     }//GEN-LAST:event_jbDesactivarClienteActionPerformed
