@@ -7,7 +7,8 @@ import com.j256.ormlite.table.DatabaseTable;
 
 @DatabaseTable(tableName = "Cliente")
 public class Cliente {
-
+@DatabaseField
+    private double altura;
     @DatabaseField
     private String nombre;
     @DatabaseField(id = true)
@@ -47,8 +48,9 @@ public class Cliente {
     public Cliente(String nombre, String id_cliente, String nacimiento, String direccion, String ocupacion,
             String telefono_habitacion, String celular, String telefono_trabajo, String telefono_emergencia,
             String email, String tipo_sangre, String condi_fisico, String estado_salud, String aval_medico,
-            String info_del_medico) {
+            String info_del_medico, Double altura) {
         this.nombre = nombre;
+          this.altura= altura;
         this.id_cliente = id_cliente;
         this.nacimiento = nacimiento;
         this.direccion = direccion;
@@ -63,6 +65,10 @@ public class Cliente {
         this.estado_salud = estado_salud;
         this.aval_medico = aval_medico;
         this.info_del_medico = info_del_medico;
+    }
+
+    public double getAltura() {
+        return altura;
     }
 
     public ForeignCollection<Seguimiento> getSeguimientos() {

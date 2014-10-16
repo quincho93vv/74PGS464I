@@ -4,12 +4,16 @@ package Vista;
 import Controlador.Controlador;
 import Modelo.Cliente;
 import Modelo.Seguimiento;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class RegistroFisicoCliente extends javax.swing.JFrame {
 private Controlador control;
-    public RegistroFisicoCliente(Controlador co,   Cliente c) {
-        this.cliente= c;
-        this.control= co;
+     private Cliente cliente;
+
+    public RegistroFisicoCliente(Controlador co, Cliente c) {
+        this.cliente = c;
+        this.control = co;
         initComponents();
     }
 
@@ -279,24 +283,26 @@ private Controlador control;
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-  public void createSeguimiento(){
-      Seguimiento seg= new Seguimiento();
-      seg.setDatosSeguimiento(
-           Double.valueOf( jtf_peso.getText()),            Double.valueOf( jtf_imc.getText()),
-            Double.valueOf( jtf_grasa.getText()),          Double.valueOf( jtf_pecho.getText()), 
-            Double.valueOf( jtf_espalda.getText()),        Double.valueOf( jtf_cadera.getText()),
-         Double.valueOf( jtf_gluteos.getText()),           Double.valueOf( jtf_cintura.getText()),   
-              Double.valueOf( jtf_pier_izq.getText()),     Double.valueOf( jtf_pier_der.getText()),
-            Double.valueOf( jtf_pant_izq.getText()),       "first", 
-            Double.valueOf( jtf_pant_der.getText()),       Double.valueOf( jtf_bra_izq.getText()),
-         Double.valueOf( jtf_bra_der.getText()),           Double.valueOf( jtf_antebra_der.getText()),
-            Double.valueOf( jtf_antebra_izq.getText()),    this.cliente
-      );   
-    control.getDao().setSeguimiento(seg);
-  }
-  
-  private Cliente cliente;
-
+  public void createSeguimiento() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy");
+        Date date = new Date();
+        String time = sdf.format(date);
+        System.out.println(time);
+        Seguimiento seg = new Seguimiento();
+          double imc= Double.parseDouble(jtf_peso.getText())/Math.pow(cliente.getAltura(), 2);
+        seg.setDatosSeguimiento(
+                Double.valueOf(jtf_peso.getText()), imc,
+                Double.valueOf(jtf_grasa.getText()), Double.valueOf(jtf_pecho.getText()),
+                Double.valueOf(jtf_espalda.getText()), Double.valueOf(jtf_cadera.getText()),
+                Double.valueOf(jtf_gluteos.getText()), Double.valueOf(jtf_cintura.getText()),
+                Double.valueOf(jtf_pier_izq.getText()), Double.valueOf(jtf_pier_der.getText()),
+                Double.valueOf(jtf_pant_izq.getText()), time,
+                Double.valueOf(jtf_pant_der.getText()), Double.valueOf(jtf_bra_izq.getText()),
+                Double.valueOf(jtf_bra_der.getText()), Double.valueOf(jtf_antebra_der.getText()),
+                Double.valueOf(jtf_antebra_izq.getText()), this.cliente
+        );
+        control.getDao().setSeguimiento(seg);
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;

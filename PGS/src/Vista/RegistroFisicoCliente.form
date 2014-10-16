@@ -94,21 +94,16 @@
                                   <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <EmptySpace min="27" pref="27" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jtf_imc" alignment="0" pref="184" max="32767" attributes="0"/>
-                                      <Component id="jtf_peso" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jtf_grasa" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jtf_pecho" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jtf_espalda" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
+                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jtf_imc" alignment="0" pref="184" max="32767" attributes="0"/>
+                                  <Component id="jtf_peso" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtf_grasa" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtf_pecho" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="jtf_espalda" alignment="0" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Component id="jtf_gluteos" min="-2" pref="184" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jtf_gluteos" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
