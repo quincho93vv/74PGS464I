@@ -971,21 +971,39 @@ public class Vista extends javax.swing.JFrame {
 
                         panel_menu1.setBackground(new java.awt.Color(0, 0, 0));
 
+                        jButton2.setBackground(new java.awt.Color(0, 0, 0));
+                        jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+                        jButton2.setForeground(new java.awt.Color(255, 255, 255));
                         jButton2.setText("Editar Rutina");
+                        jButton2.setBorder(null);
+                        jButton2.setBorderPainted(false);
+                        jButton2.setContentAreaFilled(false);
                         jButton2.addActionListener(new java.awt.event.ActionListener() {
                             public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 jButton2ActionPerformed(evt);
                             }
                         });
 
+                        jButton3.setBackground(new java.awt.Color(0, 0, 0));
+                        jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+                        jButton3.setForeground(new java.awt.Color(255, 255, 255));
                         jButton3.setText("Asignar Rutina");
+                        jButton3.setBorder(null);
+                        jButton3.setBorderPainted(false);
+                        jButton3.setContentAreaFilled(false);
                         jButton3.addActionListener(new java.awt.event.ActionListener() {
                             public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 jButton3ActionPerformed(evt);
                             }
                         });
 
+                        jButton1.setBackground(new java.awt.Color(0, 0, 0));
+                        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+                        jButton1.setForeground(new java.awt.Color(255, 255, 255));
                         jButton1.setText("Crear Rutina");
+                        jButton1.setBorder(null);
+                        jButton1.setBorderPainted(false);
+                        jButton1.setContentAreaFilled(false);
                         jButton1.addActionListener(new java.awt.event.ActionListener() {
                             public void actionPerformed(java.awt.event.ActionEvent evt) {
                                 jButton1ActionPerformed(evt);
