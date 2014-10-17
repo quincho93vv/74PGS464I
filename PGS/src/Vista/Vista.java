@@ -293,11 +293,13 @@ public class Vista extends javax.swing.JFrame {
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(783, 399));
 
         jl_PGS.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jl_PGS.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jl_PGS.setText("Power Gym System");
 
-        jL_imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/fondo_pesa.png"))); // NOI18N
+        jL_imagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/PGSBienvenida.png"))); // NOI18N
 
         jL_bienvenido.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jL_bienvenido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jL_bienvenido.setText("Bienvenido");
 
         javax.swing.GroupLayout panel_inicioLayout = new javax.swing.GroupLayout(panel_inicio);
@@ -305,25 +307,23 @@ public class Vista extends javax.swing.JFrame {
         panel_inicioLayout.setHorizontalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_inicioLayout.createSequentialGroup()
-                .addContainerGap(235, Short.MAX_VALUE)
+                .addContainerGap(228, Short.MAX_VALUE)
                 .addGroup(panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jl_PGS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jL_imagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(panel_inicioLayout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(jL_bienvenido)))
-                .addContainerGap(235, Short.MAX_VALUE))
+                    .addComponent(jl_PGS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jL_bienvenido, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
         panel_inicioLayout.setVerticalGroup(
             panel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel_inicioLayout.createSequentialGroup()
-                .addGap(57, 57, 57)
+                .addContainerGap(58, Short.MAX_VALUE)
                 .addComponent(jl_PGS)
-                .addGap(36, 36, 36)
+                .addGap(31, 31, 31)
                 .addComponent(jL_bienvenido)
-                .addGap(39, 39, 39)
+                .addGap(44, 44, 44)
                 .addComponent(jL_imagen)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(391, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Inicio", panel_inicio);
@@ -1043,6 +1043,7 @@ public class Vista extends javax.swing.JFrame {
                     jButton2.setBackground(new java.awt.Color(0, 0, 0));
                     jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
                     jButton2.setForeground(new java.awt.Color(255, 255, 255));
+                    jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/registroIcon.jpg"))); // NOI18N
                     jButton2.setText("Editar Rutina");
                     jButton2.setBorder(null);
                     jButton2.setBorderPainted(false);
@@ -1056,6 +1057,7 @@ public class Vista extends javax.swing.JFrame {
                     jButton3.setBackground(new java.awt.Color(0, 0, 0));
                     jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
                     jButton3.setForeground(new java.awt.Color(255, 255, 255));
+                    jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/AsignarIcon.png"))); // NOI18N
                     jButton3.setText("Asignar Rutina");
                     jButton3.setBorder(null);
                     jButton3.setBorderPainted(false);
@@ -1069,6 +1071,7 @@ public class Vista extends javax.swing.JFrame {
                     jButton1.setBackground(new java.awt.Color(0, 0, 0));
                     jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
                     jButton1.setForeground(new java.awt.Color(255, 255, 255));
+                    jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/registroIcon.jpg"))); // NOI18N
                     jButton1.setText("Crear Rutina");
                     jButton1.setBorder(null);
                     jButton1.setBorderPainted(false);
@@ -1084,22 +1087,22 @@ public class Vista extends javax.swing.JFrame {
                     panel_menu1Layout.setHorizontalGroup(
                         panel_menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_menu1Layout.createSequentialGroup()
-                            .addGap(0, 41, Short.MAX_VALUE)
-                            .addGroup(panel_menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(28, 28, 28))
+                            .addGap(0, 32, Short.MAX_VALUE)
+                            .addGroup(panel_menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addContainerGap(35, Short.MAX_VALUE))
                     );
                     panel_menu1Layout.setVerticalGroup(
                         panel_menu1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(panel_menu1Layout.createSequentialGroup()
-                            .addGap(78, 78, 78)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(32, 32, 32)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(34, 34, 34)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(81, 81, 81)
+                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(33, 33, 33)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(33, 33, 33)
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     );
 
@@ -1604,7 +1607,7 @@ public class Vista extends javax.swing.JFrame {
                         .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
                             .addComponent(panel_menu1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(panel_datos1, javax.swing.GroupLayout.DEFAULT_SIZE, 599, Short.MAX_VALUE))
+                            .addComponent(panel_datos1, javax.swing.GroupLayout.DEFAULT_SIZE, 654, Short.MAX_VALUE))
                         .addGroup(panel_registro_rutinasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
                                 .addGap(373, 373, 373)
@@ -1616,7 +1619,7 @@ public class Vista extends javax.swing.JFrame {
                         .addComponent(panel_menu1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
                             .addComponent(panel_datos1, javax.swing.GroupLayout.PREFERRED_SIZE, 638, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE))
+                            .addGap(0, 190, Short.MAX_VALUE))
                         .addGroup(panel_registro_rutinasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel_registro_rutinasLayout.createSequentialGroup()
                                 .addGap(214, 214, 214)
@@ -1628,14 +1631,27 @@ public class Vista extends javax.swing.JFrame {
 
                     panel_menu2.setBackground(new java.awt.Color(0, 0, 0));
 
+                    btn_crear_perfil_Nutricional.setBackground(new java.awt.Color(0, 0, 0));
+                    btn_crear_perfil_Nutricional.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+                    btn_crear_perfil_Nutricional.setForeground(new java.awt.Color(255, 255, 255));
+                    btn_crear_perfil_Nutricional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/registroIcon.jpg"))); // NOI18N
                     btn_crear_perfil_Nutricional.setText("Crear Perfil Nutricional");
+                    btn_crear_perfil_Nutricional.setBorderPainted(false);
+                    btn_crear_perfil_Nutricional.setContentAreaFilled(false);
                     btn_crear_perfil_Nutricional.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                             btn_crear_perfil_NutricionalActionPerformed(evt);
                         }
                     });
 
+                    btn_asignar_pNutricional.setBackground(new java.awt.Color(0, 0, 0));
+                    btn_asignar_pNutricional.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+                    btn_asignar_pNutricional.setForeground(new java.awt.Color(255, 255, 255));
+                    btn_asignar_pNutricional.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagen/AsignarIcon.png"))); // NOI18N
                     btn_asignar_pNutricional.setText("Asignar Perfil Nutricional");
+                    btn_asignar_pNutricional.setBorder(null);
+                    btn_asignar_pNutricional.setBorderPainted(false);
+                    btn_asignar_pNutricional.setContentAreaFilled(false);
                     btn_asignar_pNutricional.addActionListener(new java.awt.event.ActionListener() {
                         public void actionPerformed(java.awt.event.ActionEvent evt) {
                             btn_asignar_pNutricionalActionPerformed(evt);
@@ -1647,19 +1663,17 @@ public class Vista extends javax.swing.JFrame {
                     panel_menu2Layout.setHorizontalGroup(
                         panel_menu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(panel_menu2Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addGroup(panel_menu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(btn_asignar_pNutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btn_crear_perfil_Nutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btn_crear_perfil_Nutricional)
                             .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btn_asignar_pNutricional, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     );
                     panel_menu2Layout.setVerticalGroup(
                         panel_menu2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(panel_menu2Layout.createSequentialGroup()
-                            .addGap(101, 101, 101)
-                            .addComponent(btn_crear_perfil_Nutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(48, 48, 48)
-                            .addComponent(btn_asignar_pNutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(81, 81, 81)
+                            .addComponent(btn_crear_perfil_Nutricional)
+                            .addGap(29, 29, 29)
+                            .addComponent(btn_asignar_pNutricional, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     );
 
@@ -1911,24 +1925,24 @@ public class Vista extends javax.swing.JFrame {
                         panel_registro_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(panel_registro_nutricionalLayout.createSequentialGroup()
                             .addComponent(panel_menu2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 589, Short.MAX_VALUE)
+                            .addGap(75, 75, 75)
+                            .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE)
                             .addGap(0, 0, 0))
                         .addGroup(panel_registro_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel_registro_nutricionalLayout.createSequentialGroup()
                                 .addGap(284, 284, 284)
                                 .addComponent(panel_asignar_perfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(52, Short.MAX_VALUE)))
+                                .addContainerGap(160, Short.MAX_VALUE)))
                     );
                     panel_registro_nutricionalLayout.setVerticalGroup(
                         panel_registro_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(panel_menu2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 353, Short.MAX_VALUE)
+                        .addComponent(panel_datos4, javax.swing.GroupLayout.DEFAULT_SIZE, 828, Short.MAX_VALUE)
                         .addGroup(panel_registro_nutricionalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel_registro_nutricionalLayout.createSequentialGroup()
                                 .addGap(63, 63, 63)
                                 .addComponent(panel_asignar_perfil, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(46, Short.MAX_VALUE)))
+                                .addContainerGap(521, Short.MAX_VALUE)))
                     );
 
                     jTabbedPane1.addTab("Registro Nutricional", panel_registro_nutricional);
@@ -2256,7 +2270,7 @@ public class Vista extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(184, 184, 184)
                                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(211, Short.MAX_VALUE))
+                        .addContainerGap(319, Short.MAX_VALUE))
                 );
                 jPanel1Layout.setVerticalGroup(
                     jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2378,7 +2392,7 @@ public class Vista extends javax.swing.JFrame {
                     .addGroup(panel_busquedaLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(18, Short.MAX_VALUE))
+                        .addContainerGap(125, Short.MAX_VALUE))
                 );
                 panel_busquedaLayout.setVerticalGroup(
                     panel_busquedaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2620,33 +2634,9 @@ public class Vista extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jbEditarClienteActionPerformed
 
-    private void btn_crear_perfil_NutricionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_crear_perfil_NutricionalActionPerformed
-        panel_asignar_perfil.setVisible(false);
-        panel_crear_perfil_nutricional.setVisible(true);
-        panel_crear_perfil_nutricional.paintComponents(panel_crear_perfil_nutricional.getGraphics());
-    }//GEN-LAST:event_btn_crear_perfil_NutricionalActionPerformed
-
-    private void btn_asignar_pNutricionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_asignar_pNutricionalActionPerformed
-        panel_crear_perfil_nutricional.setVisible(false);
-        panel_asignar_perfil.setVisible(true);
-        panel_asignar_perfil.paintComponents(panel_asignar_perfil.getGraphics());
-    }//GEN-LAST:event_btn_asignar_pNutricionalActionPerformed
-
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
 
     }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        panel_asignar_rutina.setVisible(false);
-        panel_crear_rutina.setVisible(true);
-        panel_crear_rutina.paintComponents(panel_crear_rutina.getGraphics());
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        panel_asignar_rutina.setVisible(false);
-        panel_crear_rutina.setVisible(true);
-        panel_crear_rutina.paintComponents(panel_crear_rutina.getGraphics());
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jbDesactivarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbDesactivarClienteActionPerformed
         if(!desactivar_Cliente.isVisible()){
@@ -2695,28 +2685,6 @@ public class Vista extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "Usuario creado e ingresado");
     }//GEN-LAST:event_jBAddClienteActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        panel_crear_rutina.setVisible(false);
-        panel_asignar_rutina.setVisible(true);
-        panel_asignar_rutina.paintComponents(panel_asignar_rutina.getGraphics());
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jTFNombre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNombre2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTFNombre2ActionPerformed
-
-    private void rb_masculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_masculinoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rb_masculinoActionPerformed
-
-    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField22ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
-
     private void cedClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cedClienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cedClienteActionPerformed
@@ -2728,30 +2696,6 @@ public class Vista extends javax.swing.JFrame {
     private void jcbdiscapacidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcbdiscapacidadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jcbdiscapacidadActionPerformed
-
-    private void cedCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cedCliente1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cedCliente1ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
-    private void cedCliente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cedCliente2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cedCliente2ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
         // TODO add your handling code here:
@@ -2822,6 +2766,76 @@ public class Vista extends javax.swing.JFrame {
     private void jf_cedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jf_cedulaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jf_cedulaActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        panel_asignar_rutina.setVisible(false);
+        panel_crear_rutina.setVisible(true);
+        panel_crear_rutina.paintComponents(panel_crear_rutina.getGraphics());
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        panel_crear_rutina.setVisible(false);
+        panel_asignar_rutina.setVisible(true);
+        panel_asignar_rutina.paintComponents(panel_asignar_rutina.getGraphics());
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        panel_asignar_rutina.setVisible(false);
+        panel_crear_rutina.setVisible(true);
+        panel_crear_rutina.paintComponents(panel_crear_rutina.getGraphics());
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void cedCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cedCliente1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cedCliente1ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void btn_crear_perfil_NutricionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_crear_perfil_NutricionalActionPerformed
+        panel_asignar_perfil.setVisible(false);
+        panel_crear_perfil_nutricional.setVisible(true);
+        panel_crear_perfil_nutricional.paintComponents(panel_crear_perfil_nutricional.getGraphics());
+    }//GEN-LAST:event_btn_crear_perfil_NutricionalActionPerformed
+
+    private void btn_asignar_pNutricionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_asignar_pNutricionalActionPerformed
+        panel_crear_perfil_nutricional.setVisible(false);
+        panel_asignar_perfil.setVisible(true);
+        panel_asignar_perfil.paintComponents(panel_asignar_perfil.getGraphics());
+    }//GEN-LAST:event_btn_asignar_pNutricionalActionPerformed
+
+    private void jTFNombre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNombre2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTFNombre2ActionPerformed
+
+    private void rb_masculinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rb_masculinoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rb_masculinoActionPerformed
+
+    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField22ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void cedCliente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cedCliente2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cedCliente2ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     public static void look() {
         try {//com.jtattoo.plaf.aluminium.AluminiumLookAndFeel
