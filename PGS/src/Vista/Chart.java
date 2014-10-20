@@ -15,16 +15,15 @@ import org.jfree.data.xy.XYDataset;
 import org.jfree.ui.RectangleInsets;
 
 public class Chart {
-
-    public Chart() {
+ public Chart() {
     }
 
-    public static ChartPanel getChartPanel(String title, String y_label, HashMap<String, Double> m, String t) {
+    public static ChartPanel getChartPanel(String title, String y_label, 
+            HashMap<String, Double> m, String t) {
         XYDataset dataset = createDataset(m, title);
         chart = createChart(dataset, y_label, t);
-        ChartPanel chartPanel = new ChartPanel(chart, false);
-        chartPanel.setPreferredSize(new java.awt.Dimension(500, 270));
-        chartPanel.setMouseZoomable(true, false);
+        ChartPanel chartPanel = new ChartPanel(chart);
+        //chartPanel.setMouseZoomable(true, false);
         return chartPanel;
     }
 

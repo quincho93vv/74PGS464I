@@ -38,7 +38,7 @@ public class Login extends JFrame {
         this.setResizable(false);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        Image icon = new ImageIcon(getClass().getResource("/Imagen/icon.png")).getImage();
+        Image icon = new ImageIcon(getClass().getResource("/Imagen/pgs-logo.png")).getImage();
         setIconImage(icon);
         try {//com.jtattoo.plaf.aero.AeroLookAndFeel
             // com.jtattoo.plaf.aluminium.AluminiumLookAndFeel

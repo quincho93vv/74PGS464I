@@ -199,4 +199,18 @@ public class Cliente {
     public void setInfo_del_medico(String info_del_medico) {
         this.info_del_medico = info_del_medico;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "altura=" + altura + ", nombre=" + nombre +
+                ", id_cliente=" + id_cliente + ", nacimiento=" + nacimiento + 
+                ", direccion=" + direccion + ", ocupacion=" + ocupacion +
+                ", telefono_habitacion=" + telefono_habitacion + ", celular=" + 
+                celular + ", telefono_trabajo=" + telefono_trabajo +
+                ", telefono_emergencia=" + telefono_emergencia + ", email=" + email +
+                ", tipo_sangre=" + tipo_sangre + ", condi_fisico=" + condi_fisico + ", estado_salud=" + 
+                estado_salud + ", aval_medico=" + aval_medico + ", info_del_medico=" + info_del_medico + '}';
+    }
+    
+    
 }
